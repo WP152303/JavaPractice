@@ -54,8 +54,13 @@ public class Loop {
 			case 3:
 				ran=new Random().nextInt(4); //0~5 +1하면 1~6
 				System.out.printf("%s(으)로 설정되었습니다.\n",job[ran]);
+				break;
 			case 9:
+				System.out.println("이제 공부하세요!");
+				break;
 			default:
+				System.out.println("없는 메뉴입니다!!");
+				break;
 				
 		}
 		}while(choice!=9);
