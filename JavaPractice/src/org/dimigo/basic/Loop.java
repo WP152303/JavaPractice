@@ -24,13 +24,12 @@ public class Loop {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner scanner = new Scanner(System.in);
+	
 		int choice;
 		int at=100;
 		int ran;
 		String[] job= {"마법사","영주","기사","농민"};
-		
+		Scanner scanner = new Scanner(System.in);
 		do{
 			System.out.println("--------------------");
 			System.out.println("<<게임 메뉴>>");
@@ -53,7 +52,8 @@ public class Loop {
 				break;	
 			case 3:
 				ran=new Random().nextInt(4); //0~5 +1하면 1~6
-				System.out.printf("%s(으)로 설정되었습니다.\n",job[ran]);
+				System.out.println(job[ran]+"(으)로 설정되었습니다.");
+				//System.out.printf("%s(으)로 설정되었습니다.\n",job[ran]);
 				break;
 			case 9:
 				System.out.println("이제 공부하세요!");
