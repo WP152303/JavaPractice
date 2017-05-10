@@ -20,22 +20,23 @@ public class PesronTest2 {
 	/**
 	 * @param args
 	 */
-	private void greetings(){
-        Person person[]={
-                new Person("Tom"),
-            new Korean("홍길동"),
-            new Japanese("다나카"),
-            new Chinese("왕밍"),
-        };
-        for(Person p : person){
+	private static void greetings(Person p){
             System.out.println(p);
             p.sayHello();
             p.sayBye();
             System.out.println();
-        }
     }
 	public static void main(String[] args) {
-        new PesronTest2().greetings();
+	  Person person[]={
+	            new Person("Tom"),
+	            new Korean("홍길동"),
+	            new Japanese("다나카"),
+	            new Chinese("왕밍"),
+	      };
+	    for(int i=0; i<4;  i++){
+	        PesronTest2.greetings(person[i]);
+        }
+
     }
 
 
