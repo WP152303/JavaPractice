@@ -6,7 +6,7 @@ package org.dimigo.inheritance;
 /**
  * <pre>
  * org.dimigo.inheritance
- *    |- PesronTest
+ *    |- PersonTest
  *
  * 1. 개요 :
  * 2. 작성일: Apr 26, 2017
@@ -15,7 +15,7 @@ package org.dimigo.inheritance;
  * @author dwkim
  * @version : 1.0
  */
-public class PesronTest2 {
+public class PersonTest2 {
 
 	/**
 	 * @param args
@@ -34,7 +34,7 @@ public class PesronTest2 {
 	            new Chinese("왕밍"),
 	      };
 	    for(int i=0; i<4;  i++){
-	        PesronTest2.greetings(person[i]);
+	        PersonTest2.greetings(person[i]);
         }
 
     }
